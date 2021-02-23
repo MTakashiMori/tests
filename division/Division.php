@@ -1,5 +1,7 @@
 <?php
 
+namespace division;
+
 class Division 
 {
 

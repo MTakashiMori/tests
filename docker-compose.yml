@@ -1,0 +1,14 @@
+version: '3.7'
+services: 
+  php:
+    container_name: php7-tests-app
+    # image: mtakashimori/php8
+    build: 
+        context: .
+        target: web
+    ports: 
+      - "8000:80"
+    volumes: 
+      - .:/var/www/html/app
+    working_dir: /var/www/html/app  
+    tty: true

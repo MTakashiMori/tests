@@ -1,0 +1,27 @@
+{
+    "name": "mtakashimori/tests",
+    "type": "project",
+    "description": "Project for tests",
+    "keywords": [
+        "tests",
+        "php"
+    ],
+    "license": "MIT",
+    "require": {
+        "php": "^7",
+        "phpunit/phpunit": "^9.5"
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "autoload": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "scripts": {}
+}
